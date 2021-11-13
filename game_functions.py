@@ -44,9 +44,9 @@ def update_screen(ai_s,screen,stats,sb,ship,aliens,bullets,po,a_bullets):
     screen.fill(ai_s.bg_c)
     for bull in bullets.sprites():
         bull.draw_bullet()
-    
+    # changing bullet power according to random power color
     if bullet_power(sb):
-        ship.blitme_red()
+        ship.blitme_red() # kills two alien in 1 bullet
     elif bullet_triple(sb):
         ship.blitme_blue()
     elif mirror_power(sb):

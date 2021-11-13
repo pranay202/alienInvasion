@@ -23,8 +23,7 @@ class Info_Screen():
         self.prep_msgs(self.msgs)
         self.status = False
 
-
-
+    #
     def prep_msgs(self,msgs):
         
         self.msg_image_1 = self.font.render(msgs[0],True,self.text_color,self.rect_color)
@@ -62,7 +61,7 @@ class Info_Screen():
         self.sub_img_rect.bottom = self.title_image_rect.bottom + 20
         
 
-
+    # drawing screen
     def draw_screen(self):
         self.screen.fill(self.rect_color,self.rect)
         self.screen.blit(self.title_image,self.title_image_rect)
