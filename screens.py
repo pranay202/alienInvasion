@@ -9,7 +9,7 @@ class Info_Screen():
         self.font = pygame.font.SysFont(None,30)
         self.title_font = pygame.font.SysFont(None,100)
         self.title = 'Alien Invasion'
-        self.subtitle = ' - programmed by Maharshi'
+        self.subtitle = ' - programmed by Ajitesh, Ayan & Harsh'
         self.subtitle_font = pygame.font.SysFont(None,25)
         self.rect = pygame.Rect(0,0,self.width,self.height)
         self.rect.center = self.screen_rect.center
